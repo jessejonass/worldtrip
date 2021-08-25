@@ -1,11 +1,9 @@
 import React, { FC } from "react";
 import { Flex } from "@chakra-ui/react";
 
-type BackgroundProps = {
-  children: React.ReactNode;
-};
+import { BackgroundProps } from './types';
 
-const Background: FC<BackgroundProps> = ({ children }) => {
+const Background: FC<BackgroundProps> = ({ backgroundImage, children }) => {
   return (
     <Flex
       h="100%"
@@ -14,7 +12,7 @@ const Background: FC<BackgroundProps> = ({ children }) => {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
-      backgroundImage="url('/images/europe.jpg')"
+      backgroundImage={backgroundImage}
     >
       {children}
     </Flex>
