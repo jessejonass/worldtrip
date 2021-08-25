@@ -31,11 +31,14 @@ const Carousel: FC = () => {
         }}
         style={swiperStyle}
       >
-        <SwiperSlide >
+        <SwiperSlide>
           <Background backgroundImage="url('/images/europe.jpg')">
             <Gradient>
               <Flex>
-                <Link href="/" _hover={{ textDecoration: "none" }}>
+                <Link
+                  href="/continents/europe"
+                  _hover={{ textDecoration: "none" }}
+                >
                   <Text
                     mb="2"
                     align="center"
@@ -63,7 +66,10 @@ const Carousel: FC = () => {
           <Background backgroundImage="url('/images/africa.jpg')">
             <Gradient>
               <Flex>
-                <Link href="/" _hover={{ textDecoration: "none" }}>
+                <Link
+                  href="/continents/africa"
+                  _hover={{ textDecoration: "none" }}
+                >
                   <Text
                     mb="2"
                     align="center"
@@ -91,7 +97,10 @@ const Carousel: FC = () => {
           <Background backgroundImage="url('/images/asia.jpg')">
             <Gradient>
               <Flex>
-                <Link href="/" _hover={{ textDecoration: "none" }}>
+                <Link
+                  href="/continents/asia"
+                  _hover={{ textDecoration: "none" }}
+                >
                   <Text
                     mb="2"
                     align="center"
@@ -119,7 +128,10 @@ const Carousel: FC = () => {
           <Background backgroundImage="url('/images/south-america.jpg')">
             <Gradient>
               <Flex>
-                <Link href="/" _hover={{ textDecoration: "none" }}>
+                <Link
+                  href="/continents/southamerica"
+                  _hover={{ textDecoration: "none" }}
+                >
                   <Text
                     mb="2"
                     align="center"
