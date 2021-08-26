@@ -2,7 +2,7 @@ import { FC } from "react";
 import Head from "next/head";
 import { Flex, Text, SimpleGrid, VStack } from "@chakra-ui/react";
 
-import CityCard from "./components/CityCard";
+import Card from "./components/Card";
 import Banner from "./components/Banner";
 import Header from "components/Header";
 
@@ -74,7 +74,7 @@ const Europe: FC = () => {
           spacing="45px"
           mx={["auto", "auto", "auto", "0"]}
         >
-          <CityCard
+          <Card
             capital="London"
             country="United Kingdom"
             image="https://bit.ly/3sNJS7X"
