@@ -1,12 +1,20 @@
 import { FC } from "react";
+import Head from "next/head";
 import { Flex, Text, SimpleGrid, VStack } from "@chakra-ui/react";
 
 import CityCard from "./components/CityCard";
 import Banner from "./components/Banner";
+import Header from "components/Header";
 
 const Europe: FC = () => {
   return (
     <>
+      <Head>
+        <title>continent | worldtrip</title>
+      </Head>
+      
+      <Header hasBackButton />
+
       <Banner title="Europa" backgroundImage="https://bit.ly/3kwPDmN" />
 
       <Flex flexDir="column" maxW="1160px" mx="auto" px="8px">

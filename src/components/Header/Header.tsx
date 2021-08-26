@@ -4,7 +4,7 @@ import { FiChevronLeft } from "react-icons/fi";
 
 import { HeaderProps } from "./types";
 
-const Header: FC<HeaderProps> = ({ hasBackButton = true }) => {
+const Header: FC<HeaderProps> = ({ hasBackButton = false }) => {
   return (
     <Flex
       as="header"
